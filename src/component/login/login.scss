@@ -1,0 +1,67 @@
+$button-bg: #007bff;
+
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 100px;
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  // Define a variable for the button background color
+
+
+// Define the base button style
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: $button-bg;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  // Add a modifier class for the login button
+  &.login_btn {
+    background-color: #28a745; // Override the base background color
+  }
+}
+
+// Define hover and focus styles for all buttons
+.btn:hover,
+.btn:focus {
+  background-color: darken($button-bg, 10%);
+  color: #fff;
+  outline: none;
+}
+
+// Define active styles for all buttons
+.btn:active {
+  background-color: darken($button-bg, 20%);
+  outline: none;
+}
+
+
+}
